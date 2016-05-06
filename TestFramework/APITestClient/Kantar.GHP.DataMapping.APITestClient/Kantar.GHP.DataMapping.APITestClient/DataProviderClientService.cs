@@ -13,7 +13,7 @@ namespace Kantar.GHP.DataMapping.APITestClient
     public class DataProviderClientService: HttpClientProxy
     {
         private string providerUrl;
-        public DataProviderClientService() {
+        public DataProviderClientService(string baseUrl):base(baseUrl) {
             providerUrl = baseUrl + "DataProvider/";
         }
         public bool GetDataProviderSuccessfully(int requestDataProviderId, DataProvider responseDataProvider,Dictionary<string,string> headers=null, params string[] ignore)

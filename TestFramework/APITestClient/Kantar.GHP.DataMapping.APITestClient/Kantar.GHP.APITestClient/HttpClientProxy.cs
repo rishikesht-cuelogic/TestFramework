@@ -10,12 +10,12 @@ namespace Kantar.GHP.APITestClient
 {
     public class HttpClientProxy
     {
-        protected string baseUrl;
+        public string baseUrl;
         private HttpClient client;
-        public HttpClientProxy()
+        public HttpClientProxy(string baseUrl)
         {
             client = new HttpClient();
-            baseUrl = "http://localhost:54699/api/";
+            this.baseUrl = baseUrl;
         }
         protected bool TestHttpGetRequest(string requestUri, object expectedData, params string[] ignore)
         {
@@ -52,9 +52,10 @@ namespace Kantar.GHP.APITestClient
                 return success;
             }
             else
+            {
+                //Logger
                 return false;
-
-
+            }
         }
         private void getHttpRequest(string uri, Dictionary<string, string> headers)
         {

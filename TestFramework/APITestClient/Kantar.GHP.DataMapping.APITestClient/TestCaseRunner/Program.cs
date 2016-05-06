@@ -13,7 +13,7 @@ namespace TestCaseRunner
         static void Main(string[] args)
         {
 
-            DataProviderClientService dataProviderService = new DataProviderClientService();
+            DataProviderClientService dataProviderService = new DataProviderClientService("http://localhost:54699/api/");
 
             #region GetMethod
             var expecedGetData= new DataProvider

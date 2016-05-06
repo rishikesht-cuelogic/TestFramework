@@ -5,9 +5,9 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kantar.GHP.DataMapping.APITestClient", "Kantar.GHP.DataMapping.APITestClient\Kantar.GHP.DataMapping.APITestClient.csproj", "{5274F1C3-E132-4A1A-80EB-F78207D5EAF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCaseRunner", "TestCaseRunner\TestCaseRunner.csproj", "{2842A5F1-C5B5-4D67-8165-9C9150EDBB2F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kantar.GHP.APITestClient", "Kantar.GHP.APITestClient\Kantar.GHP.APITestClient.csproj", "{97874EEB-CBD1-478C-BC8B-CED050C3228F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kantar.GHP.DataMapping.Test", "Kantar.GHP.DataMapping.Test\Kantar.GHP.DataMapping.Test.csproj", "{51F1E64D-94E3-4E4A-8319-90AD9963B3B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{5274F1C3-E132-4A1A-80EB-F78207D5EAF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5274F1C3-E132-4A1A-80EB-F78207D5EAF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5274F1C3-E132-4A1A-80EB-F78207D5EAF2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2842A5F1-C5B5-4D67-8165-9C9150EDBB2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2842A5F1-C5B5-4D67-8165-9C9150EDBB2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2842A5F1-C5B5-4D67-8165-9C9150EDBB2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2842A5F1-C5B5-4D67-8165-9C9150EDBB2F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{97874EEB-CBD1-478C-BC8B-CED050C3228F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{97874EEB-CBD1-478C-BC8B-CED050C3228F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97874EEB-CBD1-478C-BC8B-CED050C3228F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97874EEB-CBD1-478C-BC8B-CED050C3228F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51F1E64D-94E3-4E4A-8319-90AD9963B3B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51F1E64D-94E3-4E4A-8319-90AD9963B3B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51F1E64D-94E3-4E4A-8319-90AD9963B3B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51F1E64D-94E3-4E4A-8319-90AD9963B3B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
