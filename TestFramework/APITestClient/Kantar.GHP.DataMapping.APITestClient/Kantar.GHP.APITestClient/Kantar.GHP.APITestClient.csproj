@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2842A5F1-C5B5-4D67-8165-9C9150EDBB2F}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{97874EEB-CBD1-478C-BC8B-CED050C3228F}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestCaseRunner</RootNamespace>
-    <AssemblyName>TestCaseRunner</AssemblyName>
+    <RootNamespace>Kantar.GHP.APITestClient</RootNamespace>
+    <AssemblyName>Kantar.GHP.APITestClient</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,11 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Kantar.GHP.DataMapping.Model">
-      <HintPath>..\packages\Kantar.GHP.DataMapping.Model\Kantar.GHP.DataMapping.Model.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>packages\System.Net.Http.Formatting.Extension.5.2.3.0\lib\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,21 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="HttpClientProxy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Kantar.GHP.APITestClient\Kantar.GHP.APITestClient.csproj">
-      <Project>{97874eeb-cbd1-478c-bc8b-ced050c3228f}</Project>
-      <Name>Kantar.GHP.APITestClient</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Kantar.GHP.DataMapping.APITestClient\Kantar.GHP.DataMapping.APITestClient.csproj">
-      <Project>{5274f1c3-e132-4a1a-80eb-f78207d5eaf2}</Project>
-      <Name>Kantar.GHP.DataMapping.APITestClient</Name>
-    </ProjectReference>
+    <Compile Include="Validate.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

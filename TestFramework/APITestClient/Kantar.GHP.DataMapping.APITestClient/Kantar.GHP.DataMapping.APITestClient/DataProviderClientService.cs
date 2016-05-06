@@ -1,4 +1,5 @@
-﻿using Kantar.GHP.DataMapping.Model;
+﻿using Kantar.GHP.APITestClient;
+using Kantar.GHP.DataMapping.Model;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kantar.GHP.DataMapping.APIT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCaseRunner", "TestCaseRunner\TestCaseRunner.csproj", "{2842A5F1-C5B5-4D67-8165-9C9150EDBB2F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kantar.GHP.APITestClient", "Kantar.GHP.APITestClient\Kantar.GHP.APITestClient.csproj", "{97874EEB-CBD1-478C-BC8B-CED050C3228F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2842A5F1-C5B5-4D67-8165-9C9150EDBB2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2842A5F1-C5B5-4D67-8165-9C9150EDBB2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2842A5F1-C5B5-4D67-8165-9C9150EDBB2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97874EEB-CBD1-478C-BC8B-CED050C3228F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97874EEB-CBD1-478C-BC8B-CED050C3228F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97874EEB-CBD1-478C-BC8B-CED050C3228F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97874EEB-CBD1-478C-BC8B-CED050C3228F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

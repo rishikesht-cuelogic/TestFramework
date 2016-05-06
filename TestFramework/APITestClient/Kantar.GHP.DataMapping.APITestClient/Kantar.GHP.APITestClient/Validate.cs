@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kantar.GHP.DataMapping.APITestClient
+namespace Kantar.GHP.APITestClient
 {
     internal class Validate
     {
@@ -18,7 +18,7 @@ namespace Kantar.GHP.DataMapping.APITestClient
             var token = JToken.Parse(firstJson);
 
             if (token is JArray)
-                return IsSameJsonArray(firstJson, secondJson,ignore);
+                return IsSameJsonArray(firstJson, secondJson, ignore);
 
             if (token is JObject)
                 return IsSameJsonObject(firstJson, secondJson, ignore);
@@ -37,7 +37,7 @@ namespace Kantar.GHP.DataMapping.APITestClient
 
             return true;
         }
-        private static bool IsSameJsonObject(string firstJson,string secondJson, params string[] ignore)
+        private static bool IsSameJsonObject(string firstJson, string secondJson, params string[] ignore)
         {
             var firstObject = JsonConvert.DeserializeObject<Dictionary<string, dynamic>>(firstJson);
             var secondObject = JsonConvert.DeserializeObject<Dictionary<string, dynamic>>(secondJson);
@@ -60,7 +60,7 @@ namespace Kantar.GHP.DataMapping.APITestClient
             }
             return true;
         }
-        private static bool IsSameJsonArray(string firstJson,string secondJson, params string[] ignore)
+        private static bool IsSameJsonArray(string firstJson, string secondJson, params string[] ignore)
         {
             var firstList = JsonConvert.DeserializeObject<List<Dictionary<string, dynamic>>>(firstJson);
             var secondList = JsonConvert.DeserializeObject<List<Dictionary<string, dynamic>>>(secondJson);
@@ -68,7 +68,7 @@ namespace Kantar.GHP.DataMapping.APITestClient
             if (firstList.Count != secondList.Count)
                 return false;
 
-            for(var i = 0; i < firstList.Count; i++)
+            for (var i = 0; i < firstList.Count; i++)
             {
                 if (!IsSameDictionary(firstList[i], secondList[i], ignore))
                     return false;
