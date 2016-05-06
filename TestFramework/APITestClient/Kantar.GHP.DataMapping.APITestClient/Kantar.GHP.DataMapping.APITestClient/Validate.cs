@@ -18,7 +18,7 @@ namespace Kantar.GHP.DataMapping.APITestClient
             var token = JToken.Parse(firstJson);
 
             if (token is JArray)
-                return IsSameJsonArray(firstJson, secondJson);
+                return IsSameJsonArray(firstJson, secondJson,ignore);
 
             if (token is JObject)
                 return IsSameJsonObject(firstJson, secondJson, ignore);

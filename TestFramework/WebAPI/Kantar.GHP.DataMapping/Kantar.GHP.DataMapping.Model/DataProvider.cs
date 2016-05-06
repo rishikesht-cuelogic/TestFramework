@@ -8,6 +8,7 @@ namespace Kantar.GHP.DataMapping.Model
 {
     public class DataProvider
     {
+        public int Id { get; set; }
         public string OrganizationName { get; set; }
         public string Location { get; set; }
     }

@@ -15,12 +15,26 @@ namespace Kantar.GHP.DataMapping.APITestClient
         public DataProviderClientService() {
             providerUrl = baseUrl + "DataProvider/";
         }
-        public bool GetDataProviderSuccessfully(int requestDataProviderId, DataProvider responseDataProvider,Dictionary<string,string> headers=null,string[] optionalParams=null)
+        public bool GetDataProviderSuccessfully(int requestDataProviderId, DataProvider responseDataProvider,Dictionary<string,string> headers=null, params string[] ignore)
         {
             try
             {
                 var requestUri = providerUrl + requestDataProviderId;
-                return TestHttpGetRequest(requestUri, responseDataProvider);
+                return TestHttpGetRequest(requestUri, responseDataProvider,ignore);
+            }
+            catch (Exception)
+            {
+                //Logger
+                throw;
+            }
+        }
+
+        public bool PostDataProviderSuccessfully(DataProvider requestDataProvider, List<DataProvider> responseDataProvider, Dictionary<string, string> headers = null, params string[] ignore)
+        {
+            try
+            {
+                var requestUri = providerUrl;
+                return TestHttpPostRequest(requestUri,requestDataProvider,responseDataProvider,ignore);
             }
             catch (Exception)
             {

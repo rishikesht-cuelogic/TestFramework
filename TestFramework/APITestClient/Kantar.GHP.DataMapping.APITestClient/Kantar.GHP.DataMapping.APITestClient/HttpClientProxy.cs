@@ -18,34 +18,34 @@ namespace Kantar.GHP.DataMapping.APITestClient
             client = new HttpClient();
             baseUrl = Settings.GetUrl();
         }
-        protected bool TestHttpGetRequest(string requestUri,object expectedData)
+        protected bool TestHttpGetRequest(string requestUri,object expectedData, params string[] ignore)
         {
             var response = Get(requestUri);
-            return IsExpectedResponse(response, expectedData);
+            return IsExpectedResponse(response, expectedData,ignore);
         }
-        protected bool TestHttpDeleteRequest(string requestUri, object expectedData)
+        protected bool TestHttpDeleteRequest(string requestUri, object expectedData, params string[] ignore)
         {
             var response = Delete(requestUri);
-            return IsExpectedResponse(response, expectedData);
+            return IsExpectedResponse(response, expectedData,ignore);
         }
-        protected bool TestHttpPostRequest(string requestUri,object requestData, object expectedData)
+        protected bool TestHttpPostRequest(string requestUri,object requestData, object expectedData, params string[] ignore)
         {
             var response = Post(requestUri,requestData);
-            return IsExpectedResponse(response, expectedData);
+            return IsExpectedResponse(response, expectedData,ignore);
         }
-        protected bool TestHttpPutRequest(string requestUri, object requestData, object expectedData)
+        protected bool TestHttpPutRequest(string requestUri, object requestData, object expectedData, params string[] ignore)
         {
             var response = Put(requestUri, requestData);
-            return IsExpectedResponse(response, expectedData);
+            return IsExpectedResponse(response, expectedData,ignore);
         }
-        private static bool IsExpectedResponse(HttpResponseMessage response,object expectedData)
+        private static bool IsExpectedResponse(HttpResponseMessage response,object expectedData, params string[] ignore)
         {
             if (response.IsSuccessStatusCode)
             {
                 var responseContent = response.Content;
                 string responseJson = responseContent.ReadAsStringAsync().Result;
                 var expectedJson = JsonConvert.SerializeObject(expectedData);
-                var success = Validate.IsEqualJsons(responseJson, expectedJson);
+                var success = Validate.IsEqualJsons(responseJson, expectedJson,ignore);
                 if (!success)
                 {
                     //Logger
