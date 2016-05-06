@@ -1,0 +1,5 @@
+D:\Projects\Kantar\Developement\WebAPI\Kantar.GHP.DataMapping\Kantar.GHP.DataMapping.Model\bin\Debug\Kantar.GHP.DataMapping.Model.dll
+D:\Projects\Kantar\Developement\WebAPI\Kantar.GHP.DataMapping\Kantar.GHP.DataMapping.Model\bin\Debug\Kantar.GHP.DataMapping.Model.pdb
+D:\Projects\Kantar\Developement\WebAPI\Kantar.GHP.DataMapping\Kantar.GHP.DataMapping.Model\obj\Debug\Kantar.GHP.DataMapping.Model.csprojResolveAssemblyReference.cache
+D:\Projects\Kantar\Developement\WebAPI\Kantar.GHP.DataMapping\Kantar.GHP.DataMapping.Model\obj\Debug\Kantar.GHP.DataMapping.Model.dll
+D:\Projects\Kantar\Developement\WebAPI\Kantar.GHP.DataMapping\Kantar.GHP.DataMapping.Model\obj\Debug\Kantar.GHP.DataMapping.Model.pdb

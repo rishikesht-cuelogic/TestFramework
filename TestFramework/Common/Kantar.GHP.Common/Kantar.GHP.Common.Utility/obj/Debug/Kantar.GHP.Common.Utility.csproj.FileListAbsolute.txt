@@ -1,0 +1,5 @@
+D:\Projects\Kantar\Developement\APITestClient\Kantar.GHP.Common\Kantar.GHP.Common.Utility\bin\Debug\Kantar.GHP.Common.Utility.dll
+D:\Projects\Kantar\Developement\APITestClient\Kantar.GHP.Common\Kantar.GHP.Common.Utility\bin\Debug\Kantar.GHP.Common.Utility.pdb
+D:\Projects\Kantar\Developement\APITestClient\Kantar.GHP.Common\Kantar.GHP.Common.Utility\obj\Debug\Kantar.GHP.Common.Utility.csprojResolveAssemblyReference.cache
+D:\Projects\Kantar\Developement\APITestClient\Kantar.GHP.Common\Kantar.GHP.Common.Utility\obj\Debug\Kantar.GHP.Common.Utility.dll
+D:\Projects\Kantar\Developement\APITestClient\Kantar.GHP.Common\Kantar.GHP.Common.Utility\obj\Debug\Kantar.GHP.Common.Utility.pdb

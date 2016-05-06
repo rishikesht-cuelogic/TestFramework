@@ -1,0 +1,14 @@
+D:\Projects\Kantar\Developement\APITestClient\Kantar.GHP.DataMapping.APITestClient\RunTestCase\bin\Debug\RunTestCase.exe.config
+D:\Projects\Kantar\Developement\APITestClient\Kantar.GHP.DataMapping.APITestClient\RunTestCase\bin\Debug\RunTestCase.exe
+D:\Projects\Kantar\Developement\APITestClient\Kantar.GHP.DataMapping.APITestClient\RunTestCase\bin\Debug\RunTestCase.pdb
+D:\Projects\Kantar\Developement\APITestClient\Kantar.GHP.DataMapping.APITestClient\RunTestCase\bin\Debug\Kantar.GHP.DataMapping.APITestClient.dll
+D:\Projects\Kantar\Developement\APITestClient\Kantar.GHP.DataMapping.APITestClient\RunTestCase\bin\Debug\Kantar.GHP.DataMapping.Model.dll
+D:\Projects\Kantar\Developement\APITestClient\Kantar.GHP.DataMapping.APITestClient\RunTestCase\bin\Debug\System.Net.Http.Formatting.dll
+D:\Projects\Kantar\Developement\APITestClient\Kantar.GHP.DataMapping.APITestClient\RunTestCase\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\Kantar\Developement\APITestClient\Kantar.GHP.DataMapping.APITestClient\RunTestCase\bin\Debug\Kantar.GHP.DataMapping.APITestClient.pdb
+D:\Projects\Kantar\Developement\APITestClient\Kantar.GHP.DataMapping.APITestClient\RunTestCase\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\Kantar\Developement\APITestClient\Kantar.GHP.DataMapping.APITestClient\RunTestCase\obj\Debug\RunTestCase.csprojResolveAssemblyReference.cache
+D:\Projects\Kantar\Developement\APITestClient\Kantar.GHP.DataMapping.APITestClient\RunTestCase\obj\Debug\RunTestCase.exe
+D:\Projects\Kantar\Developement\APITestClient\Kantar.GHP.DataMapping.APITestClient\RunTestCase\obj\Debug\RunTestCase.pdb
+D:\Projects\Kantar\Developement\APITestClient\Kantar.GHP.DataMapping.APITestClient\RunTestCase\bin\Debug\Chsword.JDynamic.dll
+D:\Projects\Kantar\Developement\APITestClient\Kantar.GHP.DataMapping.APITestClient\RunTestCase\bin\Debug\Chsword.JDynamic.pdb

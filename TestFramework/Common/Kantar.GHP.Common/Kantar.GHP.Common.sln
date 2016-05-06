@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kantar.GHP.Common.Model", "Kantar.GHP.Common.Model\Kantar.GHP.Common.Model.csproj", "{FDFCAEE2-35DF-40FA-BB1D-806822252696}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kantar.GHP.Common.Utility", "Kantar.GHP.Common.Utility\Kantar.GHP.Common.Utility.csproj", "{9A9F2892-F6E8-4AAF-91E9-62CB2F08E07B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDFCAEE2-35DF-40FA-BB1D-806822252696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDFCAEE2-35DF-40FA-BB1D-806822252696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDFCAEE2-35DF-40FA-BB1D-806822252696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDFCAEE2-35DF-40FA-BB1D-806822252696}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A9F2892-F6E8-4AAF-91E9-62CB2F08E07B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A9F2892-F6E8-4AAF-91E9-62CB2F08E07B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A9F2892-F6E8-4AAF-91E9-62CB2F08E07B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A9F2892-F6E8-4AAF-91E9-62CB2F08E07B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

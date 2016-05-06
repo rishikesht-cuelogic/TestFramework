@@ -1,0 +1,10 @@
+D:\Projects\Kantar\Developement\Test\Kantar.GHP.Test\Kantar.GHP.Test\obj\Debug\Kantar.GHP.Test.csprojResolveAssemblyReference.cache
+D:\Projects\Kantar\Developement\Test\Kantar.GHP.Test\Kantar.GHP.Test\bin\Debug\Kantar.GHP.Test.dll
+D:\Projects\Kantar\Developement\Test\Kantar.GHP.Test\Kantar.GHP.Test\bin\Debug\Kantar.GHP.Test.pdb
+D:\Projects\Kantar\Developement\Test\Kantar.GHP.Test\Kantar.GHP.Test\bin\Debug\Kantar.GHP.DataMapping.APITestClient.dll
+D:\Projects\Kantar\Developement\Test\Kantar.GHP.Test\Kantar.GHP.Test\bin\Debug\Kantar.GHP.DataMapping.Model.dll
+D:\Projects\Kantar\Developement\Test\Kantar.GHP.Test\Kantar.GHP.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Projects\Kantar\Developement\Test\Kantar.GHP.Test\Kantar.GHP.Test\obj\Debug\Kantar.GHP.Test.dll
+D:\Projects\Kantar\Developement\Test\Kantar.GHP.Test\Kantar.GHP.Test\obj\Debug\Kantar.GHP.Test.pdb
+D:\Projects\Kantar\Developement\Test\Kantar.GHP.Test\Kantar.GHP.Test\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\Kantar\Developement\Test\Kantar.GHP.Test\Kantar.GHP.Test\bin\Debug\Newtonsoft.Json.xml
