@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Kantar.GHP.DataMapping.Entity">
+      <HintPath>..\packages\Kantar.GHP.DataMapping.Model\Kantar.GHP.DataMapping.Entity.dll</HintPath>
+    </Reference>
     <Reference Include="Kantar.GHP.DataMapping.Model">
       <HintPath>..\packages\Kantar.GHP.DataMapping.Model\Kantar.GHP.DataMapping.Model.dll</HintPath>
     </Reference>
@@ -55,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataMappingClientService.cs" />
     <Compile Include="DataProviderClientService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

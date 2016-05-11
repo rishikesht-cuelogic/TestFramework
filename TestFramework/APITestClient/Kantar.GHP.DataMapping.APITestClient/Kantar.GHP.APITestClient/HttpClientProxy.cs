@@ -67,6 +67,7 @@ namespace Kantar.GHP.APITestClient
                 var responseContent = response.Content;
                 string responseJson = responseContent.ReadAsStringAsync().Result;
                 var expectedJson = JsonConvert.SerializeObject(expectedData);
+                
                 var success = Validate.IsEqualJsons(responseJson, expectedJson, ignore);
                 if (!success)
                 {

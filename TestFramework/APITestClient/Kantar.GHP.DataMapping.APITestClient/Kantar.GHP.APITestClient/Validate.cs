@@ -16,6 +16,9 @@ namespace Kantar.GHP.APITestClient
         }
         public static bool IsEqualJsons(string firstJson, string secondJson, params string[] ignore)
         {
+            if (ignore != null && ignore.Count() == 0 && firstJson == secondJson)
+                return true;
+
             if (!IsSameType(firstJson, secondJson))
             {
                 //Logger
@@ -26,12 +29,31 @@ namespace Kantar.GHP.APITestClient
             var token = JToken.Parse(firstJson);
 
             if (token is JArray)
-                return IsSameJsonArray(firstJson, secondJson, ignore);
+                return IsSameArrayOfJsonObject(firstJson, secondJson, ignore);
 
             if (token is JObject)
                 return IsSameJsonObject(firstJson, secondJson, ignore);
 
             return true;
+        }
+
+        private static bool IsValidJson(string json)
+        {
+            try
+            {
+                var token = JToken.Parse(json);
+
+                if (token is JArray)
+                    return true;
+
+                if (token is JObject)
+                    return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            return false;
         }
         private static bool IsSameType(string firstJson, string secondJson)
         {
@@ -65,7 +87,14 @@ namespace Kantar.GHP.APITestClient
                 var value = item.Value;
                 if (!ignore.Contains(key))
                 {
-                    if (secondObject[key] != value)
+                    var firstJson = value.ToString();
+                    var secondJson = secondObject[key].ToString();
+                    if (IsValidJson(firstJson) && IsValidJson(secondJson))
+                    {
+                        if (!IsEqualJsons(firstJson, secondJson,ignore))
+                            return false;
+                    }
+                    else if (secondObject[key] != value)
                     {
                         //Logger
                         return false;
@@ -75,8 +104,28 @@ namespace Kantar.GHP.APITestClient
             }
             return true;
         }
-        private static bool IsSameJsonArray(string firstJson, string secondJson, params string[] ignore)
+        private static bool IsValidListOfJsonObject(string json)
         {
+            try
+            {
+                JsonConvert.DeserializeObject<List<Dictionary<string, dynamic>>>(json);
+                return true;
+            }
+            catch(Exception)
+            {
+                return false;
+            }            
+        }
+        private static bool IsSameJsonArray(string firstJson,string secondJson)
+        {
+            return firstJson == secondJson;
+        }
+        private static bool IsSameArrayOfJsonObject(string firstJson, string secondJson, params string[] ignore)
+        {
+            if(!IsValidListOfJsonObject(firstJson) && !IsValidListOfJsonObject(secondJson))
+            {
+                return IsSameJsonArray(firstJson, secondJson);
+            }
             var firstList = JsonConvert.DeserializeObject<List<Dictionary<string, dynamic>>>(firstJson);
             var secondList = JsonConvert.DeserializeObject<List<Dictionary<string, dynamic>>>(secondJson);
 
