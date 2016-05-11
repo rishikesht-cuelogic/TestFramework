@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,15 +13,37 @@ namespace Kantar.GHP.APITestClient
     {
         public string baseUrl;
         private HttpClient client;
+        private Logger logger;
         public HttpClientProxy(string baseUrl)
         {
             client = new HttpClient();
+            logger = new Logger();
             this.baseUrl = baseUrl;
         }
         protected bool TestHttpGetRequest(string requestUri, object expectedData, params string[] ignore)
         {
             var response = Get(requestUri);
             return IsExpectedResponse(response, expectedData, ignore);
+        }
+        protected bool TestHttpGetFailRequest(string requestUri, HttpStatusCode statusCode)
+        {
+            var response = Get(requestUri);
+            return response.StatusCode == statusCode;
+        }
+        protected bool TestHttpDeleteFailRequest(string requestUri, HttpStatusCode statusCode)
+        {
+            var response = Get(requestUri);
+            return response.StatusCode == statusCode;
+        }
+        protected bool TestHttpPostFailRequest(string requestUri, object expectedData, HttpStatusCode statusCode)
+        {
+            var response = Get(requestUri);
+            return response.StatusCode == statusCode;
+        }
+        protected bool TestHttpPutFailRequest(string requestUri, object expectedData, HttpStatusCode statusCode)
+        {
+            var response = Get(requestUri);
+            return response.StatusCode == statusCode;
         }
         protected bool TestHttpDeleteRequest(string requestUri, object expectedData, params string[] ignore)
         {

@@ -10,6 +10,10 @@ namespace Kantar.GHP.APITestClient
 {
     internal class Validate
     {
+        public static bool ValidateToken(string token)
+        {
+            return true;
+        }
         public static bool IsEqualJsons(string firstJson, string secondJson, params string[] ignore)
         {
             if (!IsSameType(firstJson, secondJson))
